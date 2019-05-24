@@ -23,11 +23,11 @@ function getEntrySources(sources = []) {
 
 function getFileName() {
   const name = develop ? 'dev' : 'min';
-  return `precise-ui.${name}.js`;
+  return `like-react.${name}.js`;
 }
 
 function getExternals(libs = []) {
-  libs.push('react', 'react-dom', 'styled-components');
+  libs.push('styled-components');
   return libs;
 }
 
@@ -43,7 +43,7 @@ module.exports = {
   output: {
     path: dist,
     filename: getFileName(),
-    library: 'precise',
+    library: 'like-react',
     libraryTarget: 'umd',
     publicPath: '/',
   },
@@ -61,7 +61,7 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json'],
     alias: {
-      'precise-ui': path.resolve('./src'),
+      '@': path.resolve('./src'),
     },
   },
 
