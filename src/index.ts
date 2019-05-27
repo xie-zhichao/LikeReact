@@ -5,10 +5,8 @@
  */
 import LikeReactCore from './core/index';
 
-export {
-  LikeReactCore
-};
+export { LikeReactCore };
 
 export default {
-  LikeReactCore
+  LikeReactCore,
 };

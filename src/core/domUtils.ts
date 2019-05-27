@@ -32,7 +32,7 @@ export function diffProps(leftProps: ComponentProps = {}, rightProps: ComponentP
     },
   };
 
-  for (let key in leftProps) {
+  for (const key in leftProps) {
     if (rightProps[key] === undefined) {
       ret.onlyLeft[key] = leftProps[key];
     } else {
@@ -41,7 +41,7 @@ export function diffProps(leftProps: ComponentProps = {}, rightProps: ComponentP
     }
   }
 
-  for (let key in rightProps) {
+  for (const key in rightProps) {
     if (leftProps[key] === undefined) {
       ret.onlyRight[key] = rightProps[key];
     }
@@ -65,7 +65,7 @@ export function getRenderedDom(comp: Component) {
 
 /**
  * get component dom index
- * @param dom 
+ * @param dom
  */
 export function getDomIndex(dom: ComponentDom) {
   return dom.__myIndex;

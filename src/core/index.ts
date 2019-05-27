@@ -5,10 +5,8 @@
  */
 import Component from './component';
 
-export {
-  Component
-};
+export { Component };
 
 export default {
-  Component
+  Component,
 };
