@@ -3,7 +3,7 @@
  * @author xzc
  * 2019/05/24
  */
-import Component, { ComponentProps, ComponentDom } from './component';
+import Component, { ComponentProps, ExtendElement } from './component';
 
 /**
  * props differences result
@@ -67,6 +67,6 @@ export function getRenderedDom(comp: Component) {
  * get component dom index
  * @param dom
  */
-export function getDomIndex(dom: ComponentDom) {
+export function getDomIndex(dom: ExtendElement) {
   return dom.__myIndex;
 }
